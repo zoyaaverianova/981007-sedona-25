@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   </head>
 
   <body>
@@ -17,62 +18,81 @@
         </ul>
       </nav>
     </header>
-    <section class="welcome-block">
-    <img class="welcome-text" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону"/>
-    <img class="welcome-photo" src="img/background photo.jpg" width="1200" height="800" alt="Фотография Седонны"/>
-    <img class="welcome-mask" src="img/polygon.png" width="1200" height="216"/>
-    </section>
+    <div class="welcome-block">
+    <img class="welcome-text" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+    <img class="welcome-photo" src="img/background_photo.jpg" width="1200" height="800" alt="Фотография Седонны">
+    <img class="welcome-mask" src="img/polygon.png" width="1200" height="216" alt="Маска">
+  </div>
     <main class="container">
       <h1 class="visually-hidden">Путешествие в Седону</h1>
       <section class="features">
-        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <h2 class="visually-hidden">О Седоне</h2>
         <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
         <p>Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <ul class="advantage-list">
+          <li>Настоящий городок</li>
+          <li>Мост дьявола</li>
+          <li>Небольшая площадь</li>
+          <li>Красивая дорога</li>
+          <li>Мало туристов</li>
+          <li>
+            <ul class="more-advantages">
+              <li>Жилье</li>
+              <li>Еда</li>
+              <li>Сувениры</li>
+            </ul>
+          </li>
+        </ul>
       </section>
       <section class="search-form">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="question">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне<p>
-        <a class="search-btn" href="form.html">Поиск гостиницы в седоне</a>
-        <form class="search-form" action="https://echo.sedona.ru" method="post">
-        <p class="search-item">
-          <label for="check-in">Дата заезда:</label>
-          <input id="check-in" type="text" name="date" value="" placeholder="24 апреля 2017">
-        </p>
-        <p class="search-item">
-          <label for="check-out">Дата выезда:</label>
-          <input id="check-out" type="text" name="time" value="" placeholder="4 июля 2017">
-        </p>
-        <p class="search-item">
-          <label for="adult">Взрослые:</label>
-          <button type="button" class="quantity-less" aria-label="Уменьшение количества">
-            <svg height="12" viewbox="0 0 32 32" width="12">
-              <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
-            </svg>
-          </button>
-          <input class="quantity-input" type="text" name="quantity" placeholder="2" id="adult"></input>
-          <button type="button" class="quantity-more" aria-label="Увеличение количества">
-            <svg height="11" viewbox="0 0 32 32" width="11">
-              <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
-            </svg>
-          </button>
-        </p>
-        <p class="search-item">
-          <label for="children">Дети:</label>
-          <button type="button" class="quantity-less" aria-label="Уменьшение количества">
-            <svg height="12" viewbox="0 0 32 32" width="12">
-              <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
-            </svg>
-          </button>
-          <input class="quantity-input" type="text" name="quantity" placeholder="0" id="children"></input>
-          <button type="button" class="quantity-more" aria-label="Увеличение количества">
-            <svg height="11" viewbox="0 0 32 32" width="11">
-              <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
-            </svg>
-          </button>
-        </p>
-        <button class="button" type="submit">Найти</button>
-        </form>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <div class="find-hotels">
+          <a class="search-btn" href="form.html">Поиск гостиницы в седоне</a>
+          <form class="search-form" action="https://echo.sedona.ru" method="post">
+          <p class="search-item">
+            <label for="check-in">Дата заезда:</label>
+            <input id="check-in" type="text" name="date" value="" placeholder="24 апреля 2017">
+          </p>
+          <p class="search-item">
+            <label for="check-out">Дата выезда:</label>
+            <input id="check-out" type="text" name="time" value="" placeholder="4 июля 2017">
+          </p>
+          <p class="search-item">
+            <label for="adult">Взрослые:</label>
+            <button type="button" class="quantity-less" aria-label="Уменьшение количества">
+              <svg height="12" viewbox="0 0 32 32" width="12">
+                <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"/>
+              </svg>
+            </button>
+            <input class="quantity-input" type="text" name="quantity" placeholder="2" id="adult">
+            <button type="button" class="quantity-more" aria-label="Увеличение количества">
+              <svg height="11" viewbox="0 0 32 32" width="11">
+                <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"/>
+              </svg>
+            </button>
+          </p>
+          <p class="search-item">
+            <label for="children">Дети:</label>
+            <button type="button" class="quantity-less" aria-label="Уменьшение количества">
+              <svg height="12" viewbox="0 0 32 32" width="12">
+                <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"/>
+              </svg>
+            </button>
+            <input class="quantity-input" type="text" name="quantity" placeholder="0" id="children">
+            <button type="button" class="quantity-more" aria-label="Увеличение количества">
+              <svg height="11" viewbox="0 0 32 32" width="11">
+                <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"/>
+              </svg>
+            </button>
+          </p>
+          <button class="button" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
@@ -82,12 +102,12 @@
     <footer class="main-footer">
       <a class="page-footer_logo">#visitsedona</a>
       <div class="footer-social">
-        <a class="social" href="#"> <img src="img/twitter.svg" width="17" height="15" alt="Twitter"/>Twitter</a>
-        <a class="social" href="#"> <img src="img/fb-icon.svg" width="17" height="15" alt="FaceBook"/>FaceBook</a>
-        <a class="social" href="#"> <img src="img/youtube.svg" width="17" height="15" alt="YouTube"/>YouTube</a>
+        <a class="social" href="#"> <img src="img/twitter.svg" width="17" height="15" alt="Twitter">Twitter</a>
+        <a class="social" href="#"> <img src="img/fb-icon.svg" width="17" height="15" alt="FaceBook">FaceBook</a>
+        <a class="social" href="#"> <img src="img/youtube.svg" width="17" height="15" alt="YouTube">YouTube</a>
       </div>
       <p class="footer-copyright">
-        <b>Website by</b> <a class="link" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"/>HTML Academy</a>
+        <b>Website by</b> <a class="link" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">HTML Academy</a>
       </p>
     </footer>
   </body>
